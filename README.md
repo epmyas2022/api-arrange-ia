@@ -48,6 +48,25 @@ OPENROUTER_API_KEY=your_openrouter_api_key
 PORT=4000
 ```
 
+## 🐳 Docker
+
+### Usando Docker Compose (Recomendado)
+
+La forma más sencilla de ejecutar el proyecto es usando Docker Compose:
+
+```bash
+# Construir y levantar el contenedor
+docker-compose up -d
+
+# Ver logs
+docker-compose logs -f
+
+# Detener el contenedor
+docker-compose down
+```
+
+El servidor estará disponible en `http://localhost:3000` (o el puerto configurado en `.env`)
+
 ## 🎯 Uso
 
 ### Iniciar el servidor

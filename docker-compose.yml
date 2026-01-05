@@ -1,0 +1,16 @@
+name: 'api-arrange-ia'
+services:
+  api-arrange-ia:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+      target: production
+    ports:
+      - '${PORT:-3000}:80'
+    volumes:
+      - api-arrange-ia-data:/app/data
+
+volumes:
+  api-arrange-ia-data:
+    driver: local
+    external: false
