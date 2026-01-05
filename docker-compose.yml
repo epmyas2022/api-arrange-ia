@@ -1,6 +1,7 @@
 name: 'api-arrange-ia'
 services:
-  api-arrange-ia:
+  
+  backend:
     build:
       context: .
       dockerfile: .docker/Dockerfile
